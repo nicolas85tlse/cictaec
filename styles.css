@@ -32,53 +32,6 @@ body {
     align-items: center;
 }
 
-/* Conteneur du menu */
-.dropdown-lang {
-    position: relative;
-    display: inline-block;
-}
-
-/* Style du bouton principal */
-.dropbtn {
-    background: none;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 5px 10px;
-}
-
-.dropbtn img, .dropdown-content img {
-    width: 25px;
-    height: auto;
-}
-
-/* Cache le contenu par défaut */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 80px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 8px 12px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown-lang:hover .dropdown-content {
-    display: block;
-}
-
 .logo img {
     height: 70px;
     width: auto;
@@ -101,10 +54,6 @@ body {
 
 .menu a:hover {
     color: #2c7ba7;
-}
-
-.language {
-    font-size: 20px;
 }
 
 /* Hero Section */
@@ -507,12 +456,6 @@ body {
     font-weight: bold;
 }
 
-.product-item p {
-    font-size: 13px;
-    color: #333;
-    line-height: 1.6;
-}
-
 .aceite {
     background-image: url('images/seccion_productos_aceite.png');
 }
@@ -704,10 +647,6 @@ body {
     .commerce-content,
     .import-export {
         flex-direction: column;
-    }
-
-    .products-grid {
-        grid-template-columns: 1fr;
     }
 
     .contact-content {
