@@ -472,6 +472,10 @@ body {
     background-image: url('images/seccion_productos_jamon.png');
 }
 
+.pescado {
+    background-image: url('images/seccion_productos_pescado.jpg');
+}
+
 /* Ajustes para nuevas secciones */
 .tourism {
     background-color: #ffffff;
@@ -656,4 +660,37 @@ body {
     .hero h1 {
         font-size: 36px;
     }
+}
+
+/* =================================
+   ESTILOS PARA PÁGINA DE PRODUCTOS
+   ================================= */
+
+.hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.border-dashed {
+    border: 2px dashed #ddd !important;
+    background-color: #f8f9fa;
+}
+
+.border-dashed:hover {
+    border-color: #2c7ba7 !important;
+    background-color: #e9ecef;
+}
+
+.badge {
+    font-size: 0.85rem;
+    padding: 0.5em 0.8em;
 }

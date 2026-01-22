@@ -75,7 +75,14 @@ const translations = {
         'prod_1_title': 'ACEITE',
         'prod_2_title': 'FRUTOS',
         'prod_3_title': 'TEXTIL',
-        'prod_4_title': 'JAMON'
+        'prod_4_title': 'JAMON',
+        'prod_5_title': 'PESCADO',
+        'prod_1_desc': 'Aceite de alta calidad proveniente de Ecuador, ideal para exportación a mercados internacionales.',
+        'prod_2_desc': 'Frutas frescas y frutos secos de la mejor calidad, cultivados en las tierras ecuatorianas.',
+        'prod_3_desc': 'Productos textiles artesanales y de alta calidad, representando la tradición ecuatoriana.',
+        'prod_4_desc': 'Jamón curado de excelente calidad, preparado con métodos tradicionales.',
+        'prod_5_desc': 'Pescado fresco y mariscos de las costas del Pacífico ecuatoriano.',
+        'products_page_title': 'Nuestros Productos'
     },
     'fr': {
         'nav_home': 'ACCUEIL',
@@ -120,7 +127,14 @@ const translations = {
         'prod_1_title': 'HUILE',
         'prod_2_title': 'FRUITS',
         'prod_3_title': 'TEXTILE',
-        'prod_4_title': 'JAMBON'
+        'prod_4_title': 'JAMBON',
+        'prod_5_title': 'POISSON',
+        'prod_1_desc': 'Huile de haute qualité provenant d\'Équateur, idéale pour l\'exportation vers les marchés internationaux.',
+        'prod_2_desc': 'Fruits frais et fruits secs de la meilleure qualité, cultivés sur les terres équatoriennes.',
+        'prod_3_desc': 'Produits textiles artisanaux de haute qualité, représentant la tradition équatorienne.',
+        'prod_4_desc': 'Jambon séché de qualité exceptionnelle, préparé selon des méthodes traditionnelles.',
+        'prod_5_desc': 'Poissons frais et fruits de mer des côtes du Pacifique équatorien.',
+        'products_page_title': 'Nos Produits'
     },
     'en': {
         'nav_home': 'HOME',
@@ -165,7 +179,14 @@ const translations = {
         'prod_1_title': 'OIL',
         'prod_2_title': 'FRUITS',
         'prod_3_title': 'TEXTILE',
-        'prod_4_title': 'HAM'
+        'prod_4_title': 'HAM',
+        'prod_5_title': 'FISH',
+        'prod_1_desc': 'High quality oil from Ecuador, ideal for export to international markets.',
+        'prod_2_desc': 'Fresh fruits and dried fruits of the best quality, grown on Ecuadorian lands.',
+        'prod_3_desc': 'Handcrafted textile products of high quality, representing Ecuadorian tradition.',
+        'prod_4_desc': 'Cured ham of excellent quality, prepared with traditional methods.',
+        'prod_5_desc': 'Fresh fish and seafood from the Ecuadorian Pacific coast.',
+        'products_page_title': 'Our Products'
     },
     'ca': {
         'nav_home': 'INICI',
@@ -210,7 +231,14 @@ const translations = {
         'prod_1_title': 'OLI',
         'prod_2_title': 'FRUITES',
         'prod_3_title': 'TÈXTIL',
-        'prod_4_title': 'PERNIL'
+        'prod_4_title': 'PERNIL',
+        'prod_5_title': 'PEIX',
+        'prod_1_desc': 'Oli d\'alta qualitat provinent de l\'Equador, ideal per a l\'exportació a mercats internacionals.',
+        'prod_2_desc': 'Fruites fresques i fruites seques de la millor qualitat, cultivades a les terres equatorianes.',
+        'prod_3_desc': 'Productes tèxtils artesanals d\'alta qualitat, representant la tradició equatoriana.',
+        'prod_4_desc': 'Pernil curat de qualitat excel·lent, preparat amb mètodes tradicionals.',
+        'prod_5_desc': 'Peix fresc i marisc de les costes del Pacífic equatorià.',
+        'products_page_title': 'Els Nostres Productes'
     }
 };
 
