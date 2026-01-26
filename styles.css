@@ -466,8 +466,9 @@ body {
 .product-item h4 {
     font-size: 16px;
     margin-bottom: 10px;
-    color: #2c7ba7;
+    color: #1a4d6b;
     font-weight: bold;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 .aceite {
