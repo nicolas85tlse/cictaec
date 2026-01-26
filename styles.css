@@ -37,13 +37,13 @@ body {
 }
 
 .logo {
-    height: 45px;
+    height: 35px;
     display: flex;
     align-items: center;
 }
 
 .logo img {
-    max-height: 45px;
+    max-height: 35px;
     width: auto;
     height: auto;
     object-fit: contain;
