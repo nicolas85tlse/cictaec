@@ -36,9 +36,17 @@ body {
     align-items: center;
 }
 
+.logo {
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
-    height: 40px;
+    max-height: 45px;
     width: auto;
+    height: auto;
+    object-fit: contain;
     background-color: transparent;
     mix-blend-mode: darken;
 }
