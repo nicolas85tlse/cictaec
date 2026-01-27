@@ -422,7 +422,11 @@ body {
 /* Sections avec fond vert */
 #areas h2,
 .commerce h2,
-.products h2 {
+.products h2,
+.sport h2,
+.sport h3.reveal-title,
+.container h2.reveal-title,
+.container h3.reveal-title {
     background-color: #6fb374;
     color: #fefdfd;
     padding: 20px 40px;
