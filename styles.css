@@ -449,19 +449,14 @@ body {
 }
 
 .product-item {
-    background-color: rgba(255, 255, 255, 0.9);
-    background-image: url('images/seccion_comercio.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 40px 25px;
+    position: relative;
+    overflow: hidden;
+    height: 160px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     cursor: pointer;
     margin-bottom: 20px;
-    position: relative;
-    text-align: center;
 }
 
 .product-item::before {
@@ -471,60 +466,111 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.35);
-    border-radius: 8px;
-    z-index: 1;
-    transition: background-color 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    transition: transform 0.5s ease;
 }
 
-.product-item:hover::before {
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.product-item h4 {
-    position: relative;
-    z-index: 2;
-}
-
-.product-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}
-
-.product-item h4 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #B87333;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-}
-
-.product-item:hover h4 {
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.aceite {
+.aceite::before {
     background-image: url('images/seccion_productos_aceite.png');
 }
 
-.frutos {
+.frutos::before {
     background-image: url('images/seccion_productos_frutos.png');
 }
 
-.textil {
+.textil::before {
     background-image: url('images/seccion_productos_textil.png');
 }
 
-.jamon {
+.jamon::before {
     background-image: url('images/seccion_productos_jamon.png');
 }
 
-.pescado {
+.pescado::before {
+    background-image: url('images/seccion_productos_pescado.jpg');
+}
+
+.product-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.product-item:hover::before {
+    transform: scale(1.1);
+}
+
+.product-item h4 {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    z-index: 2;
+    font-size: 1.1rem;
+    margin-bottom: 2px;
+    color: #ffd700;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    display: block;
+    text-align: left;
+}
+
+.product-item .product-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    z-index: 3;
+    transition: opacity 0.5s ease;
+}
+
+.product-item:hover .product-overlay {
+    opacity: 1;
+}
+
+.product-item .product-overlay p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.product-item .product-overlay .btn {
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.product-item .product-overlay .btn:hover {
+    background-color: #ffed4e;
+    transform: scale(1.05);
+}
+
+.product-item:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.pescado::before {
     background-image: url('images/seccion_productos_pescado.jpg');
 }
 
