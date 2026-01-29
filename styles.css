@@ -636,6 +636,21 @@ body {
     padding: 20px 40px;
 }
 
+/* CULTURA Y TURISMO: Layout desktop */
+.tourism .commerce-content:first-of-type {
+    flex-direction: row-reverse;
+}
+
+.tourism .commerce-content:first-of-type .commerce-image {
+    flex: 0 0 45%;
+    max-width: 45%;
+}
+
+.tourism .commerce-content:first-of-type .commerce-text {
+    flex: 1;
+    padding-right: 30px;
+}
+
 /* Responsive para la inversión de la sección cultural */
 @media (max-width: 768px) {
     /* Section CULTURA: image à gauche (plus petite), texte à droite */
