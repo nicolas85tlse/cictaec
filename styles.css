@@ -833,8 +833,9 @@ body {
         flex-direction: column;
     }
 
-    .commerce-content {
-        flex-direction: column-reverse;
+    /* Section COMERCIO - PRODUCTOS TRADICIONALES: Image en haut, texte et bouton en bas */
+    .commerce .commerce-content:first-of-type {
+        flex-direction: column-reverse !important;
     }
 
     .contact-content {
