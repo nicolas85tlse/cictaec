@@ -850,7 +850,7 @@ body {
         margin-left: 0;
     }
 
-    .founder-info p[data-key="founder_quote"] br {
+    .founder-info [data-key="founder_quote"] br {
         display: none;
     }
 
