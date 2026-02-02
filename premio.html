@@ -59,7 +59,7 @@
 
     <div class="container premio-container">
         <div class="row g-4">
-            <!-- Sidebar avec les périodes -->
+            <!-- Barra lateral con los períodos -->
             <div class="col-lg-3 col-md-4">
                 <div class="d-grid gap-3">
                     <div class="periodo-item active" onclick="showPeriodo('2008-2012')">
@@ -74,12 +74,12 @@
                 </div>
             </div>
 
-            <!-- Zone d'affichage des images -->
+            <!-- Zona de visualización de imágenes -->
             <div class="col-lg-9 col-md-8">
                 <div class="images-display">
                     <h2 id="periodo-title">Período 2008 - 2012</h2>
 
-                    <!-- Images pour 2008-2012 -->
+                    <!-- Imágenes para 2008-2012 -->
                     <div id="periodo-2008-2012" class="images-grid active">
                         <div class="card image-card">
                             <img src="images/senora_flor.png" class="card-img-top" alt="Premio 2008">
@@ -103,7 +103,7 @@
                         </div>
                     </div>
 
-                    <!-- Images pour 2013-2020 -->
+                    <!-- Imágenes para 2013-2020 -->
                     <div id="periodo-2013-2020" class="images-grid">
                         <div class="card image-card">
                             <div class="image-placeholder">🏆</div>
@@ -139,7 +139,7 @@
                         </div>
                     </div>
 
-                    <!-- Images pour 2021-2026 -->
+                    <!-- Imágenes para 2021-2026 -->
                     <div id="periodo-2021-2026" class="images-grid">
                         <div class="card image-card">
                             <div class="image-placeholder">🏆</div>
@@ -193,24 +193,24 @@
     <script src="script.js"></script>
     <script>
         function showPeriodo(periodo) {
-            // Enlever la classe active de tous les items
+            // Quitar la clase active de todos los items
             document.querySelectorAll('.periodo-item').forEach(item => {
                 item.classList.remove('active');
             });
 
-            // Masquer toutes les grilles d'images
+            // Ocultar todas las cuadrículas de imágenes
             document.querySelectorAll('.images-grid').forEach(grid => {
                 grid.classList.remove('active');
             });
 
-            // Ajouter la classe active à l'item cliqué
+            // Agregar la clase active al item clickeado
             event.target.closest('.periodo-item').classList.add('active');
 
-            // Afficher la grille correspondante
+            // Mostrar la cuadrícula correspondiente
             const gridId = 'periodo-' + periodo;
             document.getElementById(gridId).classList.add('active');
 
-            // Mettre à jour le titre
+            // Actualizar el título
             document.getElementById('periodo-title').textContent = 'Período ' + periodo;
         }
     </script>
