@@ -558,7 +558,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.70);
     z-index: 1;
 }
 
@@ -794,6 +794,7 @@ body {
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     transition: background-color 0.3s ease;
+    z-index: 1000;
 }
 
 .back-to-top:hover {
@@ -1031,7 +1032,7 @@ body {
 }
 
 .categoria-item {
-    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(30, 64, 175, 0.9) 100%);
     color: white;
     padding: 25px 20px;
     margin-bottom: 20px;
@@ -1047,10 +1048,11 @@ body {
     transform: translateX(10px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.3);
     border-color: #ffd700;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.95) 0%, rgba(30, 64, 175, 0.95) 100%);
 }
 
 .categoria-item.active {
-    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.95) 0%, rgba(30, 58, 138, 0.95) 100%);
     border-color: #ffd700;
     transform: scale(1.05);
 }
@@ -1065,7 +1067,7 @@ body {
 .productos-display {
     flex: 1;
     padding: 20px;
-    background: #f8f9fa;
+    background: rgba(248, 249, 250, 0.60);
     border-radius: 10px;
     min-height: 500px;
 }
@@ -1075,6 +1077,9 @@ body {
     margin-bottom: 30px;
     font-weight: bold;
     text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 15px;
+    border-radius: 8px;
 }
 
 .productos-grid {
@@ -1088,7 +1093,7 @@ body {
 }
 
 .producto-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.75);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -1100,6 +1105,7 @@ body {
 .producto-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    background: rgba(255, 255, 255, 0.92);
 }
 
 .producto-card img {
